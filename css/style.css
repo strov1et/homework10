@@ -1,0 +1,124 @@
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid black;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 0.8fr 5fr 3fr;
+    grid-template-areas: 
+    "header header header"
+    "aside . ."
+    "aside main article1"
+    "aside article2 text";
+    gap: 40px;
+    
+    
+   
+}
+/* ჰედერი */
+.header{
+  
+    grid-area: header;
+      
+    
+}
+header{
+    height: 140px;
+    padding: 5% 5%;
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr 1fr;
+
+
+}
+
+.search_bar{
+    background-color: #DDDDDD;
+    width: 70%;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    color: #8E8E8E;
+
+}
+.fa-solid{
+    padding: 0 5%;
+    font-size: 1.25rem;
+}
+.search{
+    font-size: 1.4rem;
+}
+.create_bar{
+    background-color: #008EEA;
+    width: 80%;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  #FFFFFF;
+    font-size: 1.4rem;
+}
+.photos{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5%;
+   
+}
+
+
+
+
+
+
+
+.main{ 
+    background-color: blue;
+    grid-area: main;
+   
+
+
+}
+.aside{
+    
+    grid-area: aside;
+    margin-top: -40px;
+    display: grid;
+    padding: 5% 5%;
+    
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 5fr 1fr 1fr 1fr;
+    
+}
+.div {display: flex;
+    align-items: center;
+    gap: 5%;
+    padding: 5%;
+    height: 70%;
+    font-size: 1.4rem;
+
+}
+
+
+.home{
+background-color: #DDDDDD;
+border-radius: 50px;
+
+}
+
+
+
+
+
+.article1 {
+    background-color: yellow;
+    grid-area: article1;}
+.article2{
+    background-color: violet;
+    grid-area: article2;} 
+.text{
+    background-color: brown;
+    grid-area: text;} 
+
